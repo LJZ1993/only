@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--HomeFragment-->
+    <!--中间的新手指南等-->
+    <style name="homefragment_guide_ll">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="homefragment_guide_img">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="homefragment_guide_text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tab_normal</item>
+    </style>
+    <!--人气、进度等-->
+    <style name="homefragment_sort_rl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="homefragment_sort_ll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="homefragment_sort_img">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="homefragment_sort_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sort_normal</item>
+    </style>
+    
+</resources>

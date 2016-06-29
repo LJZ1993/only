@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@drawable/ic_arrow_down"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/img_message"
+            android:layout_toRightOf="@+id/ll_location"
+            android:paddingTop="@dimen/padding_size"
+            android:paddingBottom="@dimen/padding_size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"/>
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/img_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="4dp"
+                android:hint="@string/homefragment_search_hint"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_message"
+            android:layout_alignParentRight="true"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_message"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line_grey"
+        android:layout_below="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <com.xunao.onlyone.ui.widget.MyPtrClassicFrameLayout
+        android:id="@+id/ptr_layout"
+        android:layout_below="@+id/ll_top"
+        android:layout_marginTop="1px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:ptr_resistance="1.7"
+        app:ptr_ratio_of_header_height_to_refresh="1.0"
+        app:ptr_duration_to_close="300"
+        app:ptr_duration_to_close_header="500"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false" >
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" >
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_advertising"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/loop_advertising"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_point"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="8dp"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_guide"
+                            android:layout_below="@+id/rl_advertising"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/ll_beginner_guide"
+                                style="@style/homefragment_guide_ll">
+
+                                <ImageView
+                                    style="@style/homefragment_guide_img"
+                                    app:srcCompat="@drawable/ic_home_xszn"/>
+
+                                <TextView
+                                    style="@style/homefragment_guide_text"
+                                    android:text="@string/homefragment_guide_xszn"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_ten_yuan"
+                                style="@style/homefragment_guide_ll">
+
+                                <ImageView
+                                    style="@style/homefragment_guide_img"
+                                    app:srcCompat="@drawable/ic_home_syzq"/>
+
+                                <TextView
+                                    style="@style/homefragment_guide_text"
+                                    android:text="@string/homefragment_guide_syzq"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_show"
+                                style="@style/homefragment_guide_ll">
+
+                                <ImageView
+                                    style="@style/homefragment_guide_img"
+                                    app:srcCompat="@drawable/ic_home_sd"/>
+
+                                <TextView
+                                    style="@style/homefragment_guide_text"
+                                    android:text="@string/homefragment_guide_sd"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_sign_in"
+                                style="@style/homefragment_guide_ll">
+
+                                <ImageView
+                                    style="@style/homefragment_guide_img"
+                                    app:srcCompat="@drawable/ic_home_jrqd"/>
+
+                                <TextView
+                                    style="@style/homefragment_guide_text"
+                                    android:text="@string/homefragment_guide_jrqd"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_below="@+id/ll_guide"
+                            android:background="@color/default_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_sort"
+                            android:layout_below="@+id/ll_guide"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_hot"
+                                style="@style/homefragment_sort_rl">
+
+                                <LinearLayout
+                                    style="@style/homefragment_sort_ll">
+
+                                    <ImageView
+                                        android:id="@+id/img_hot"
+                                        style="@style/homefragment_sort_img"
+                                        app:srcCompat="@drawable/ic_home_hot_normal"/>
+
+                                    <TextView
+                                        android:id="@+id/text_hot"
+                                        style="@style/homefragment_sort_text"
+                                        android:text="@string/homefragment_sort_hot" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_progress"
+                                style="@style/homefragment_sort_rl">
+
+                                <LinearLayout
+                                    style="@style/homefragment_sort_ll">
+
+                                    <ImageView
+                                        android:id="@+id/img_progress"
+                                        style="@style/homefragment_sort_img"
+                                        app:srcCompat="@drawable/ic_home_progress_normal"/>
+
+                                    <TextView
+                                        android:id="@+id/text_progress"
+                                        style="@style/homefragment_sort_text"
+                                        android:text="@string/homefragment_sort_progress" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_latest"
+                                style="@style/homefragment_sort_rl">
+
+                                <LinearLayout
+                                    style="@style/homefragment_sort_ll">
+
+                                    <ImageView
+                                        android:id="@+id/img_latest"
+                                        style="@style/homefragment_sort_img"
+                                        app:srcCompat="@drawable/ic_home_latest_normal"/>
+
+                                    <TextView
+                                        android:id="@+id/text_latest"
+                                        style="@style/homefragment_sort_text"
+                                        android:text="@string/homefragment_sort_latest" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_need"
+                                style="@style/homefragment_sort_rl">
+
+                                <LinearLayout
+                                    style="@style/homefragment_sort_ll">
+
+                                    <ImageView
+                                        android:id="@+id/img_need"
+                                        style="@style/homefragment_sort_img"
+                                        app:srcCompat="@drawable/ic_home_need_normal"/>
+
+                                    <TextView
+                                        android:id="@+id/text_need"
+                                        style="@style/homefragment_sort_text"
+                                        android:text="@string/homefragment_sort_need" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_below="@+id/ll_sort"
+                            android:background="@color/line_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px" />
+
+                    </RelativeLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </com.xunao.onlyone.ui.widget.MyPtrClassicFrameLayout>
+
+</RelativeLayout>

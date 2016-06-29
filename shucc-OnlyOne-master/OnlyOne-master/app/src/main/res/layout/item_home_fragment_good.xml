@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:padding="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_good"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_good"
+        android:layout_below="@+id/img_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="苹果手机Apple iphone SE"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_below="@+id/text_good"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_shopping_cart" />
+
+    <com.xunao.onlyone.ui.widget.HorizontalProgressView
+        android:id="@+id/progress_view"
+        android:layout_below="@+id/text_good"
+        android:layout_toLeftOf="@+id/img_cart"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+
+        app:horizontalColor="#efeeee"
+        app:horizontalProgressColor="#ffc23c"/>
+
+    <LinearLayout
+        android:layout_below="@+id/progress_view"
+        android:layout_toLeftOf="@+id/img_cart"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进度:"
+            android:textSize="12sp"
+            android:textColor="@color/home_item_grey"/>
+
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="12sp"
+            android:textColor="@color/home_item_red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/剩余:"
+            android:textSize="12sp"
+            android:textColor="@color/home_item_grey"/>
+
+        <TextView
+            android:id="@+id/text_overage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="299"
+            android:textSize="12sp"
+            android:textColor="@color/home_item_red"/>
+    </LinearLayout>
+
+</RelativeLayout>

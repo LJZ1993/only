@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/mineinfoactivity_title"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:text="@string/mineinfoactivity_avator"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avator"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/test_avator"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/default_background"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_id"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_id"/>
+
+                <ImageView
+                    android:id="@+id/img_id"
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+                <TextView
+                    android:id="@+id/text_id"
+                    android:layout_toLeftOf="@+id/img_id"
+                    android:layout_marginRight="8dp"
+                    style="@style/item_text"
+                    android:text="747474"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_nick"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_nick"/>
+
+                <ImageView
+                    android:id="@+id/img_nick"
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+                <TextView
+                    android:id="@+id/text_nick"
+                    android:layout_toLeftOf="@+id/img_nick"
+                    android:layout_marginRight="8dp"
+                    style="@style/item_text"
+                    android:text="斯巴达"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_tel"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_tel"/>
+
+                <ImageView
+                    android:id="@+id/img_tel"
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+                <TextView
+                    android:id="@+id/text_tel"
+                    android:layout_toLeftOf="@+id/img_tel"
+                    android:layout_marginRight="8dp"
+                    style="@style/item_text"
+                    android:text="18817392302"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_gender"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_gender"/>
+
+                <ImageView
+                    android:id="@+id/img_gender"
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+                <TextView
+                    android:id="@+id/text_gender"
+                    android:layout_toLeftOf="@+id/img_gender"
+                    android:layout_marginRight="8dp"
+                    style="@style/item_text"
+                    android:text="男"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_birthday"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_birthday"/>
+
+                <ImageView
+                    android:id="@+id/aimg_birthday"
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+                <TextView
+                    android:id="@+id/text_birthday"
+                    android:layout_toLeftOf="@+id/aimg_birthday"
+                    android:layout_marginRight="8dp"
+                    style="@style/item_text"
+                    android:text="19900331"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_city"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_city"/>
+
+                <ImageView
+                    android:id="@+id/img_city"
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+                <TextView
+                    android:id="@+id/text_city"
+                    android:layout_toLeftOf="@+id/img_city"
+                    android:layout_marginRight="8dp"
+                    style="@style/item_text"
+                    android:text="上海"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_addr"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_reward_addr"/>
+
+                <ImageView
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/default_background"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_wx"
+                style="@style/item_rl">
+
+                <ImageView
+                    android:id="@+id/img_wx"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/ic_mine_info_wx"/>
+
+                <TextView
+                    style="@style/item_text"
+                    android:layout_toRightOf="@+id/img_wx"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_wx"/>
+
+                <TextView
+                    android:id="@+id/text_wx"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mineinfoactivity_go_binding"
+                    android:textSize="14sp"
+                    android:textColor="@color/mine_info_red"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sina"
+                style="@style/item_rl">
+
+                <ImageView
+                    android:id="@+id/img_sina"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/ic_mine_info_sina"/>
+
+                <TextView
+                    style="@style/item_text"
+                    android:layout_toRightOf="@+id/img_sina"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_sina"/>
+
+                <TextView
+                    android:id="@+id/text_sina"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mineinfoactivity_go_binding"
+                    android:textSize="14sp"
+                    android:textColor="@color/mine_info_red"/>
+
+            </RelativeLayout>
+
+            <View style="@style/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_QQ"
+                style="@style/item_rl">
+
+                <ImageView
+                    android:id="@+id/img_QQ"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/ic_mine_info_qq"/>
+
+                <TextView
+                    style="@style/item_text"
+                    android:layout_toRightOf="@+id/img_QQ"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#666666"
+                    android:text="@string/mineinfoactivity_qq"/>
+
+                <TextView
+                    android:id="@+id/text_QQ"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mineinfoactivity_go_binding"
+                    android:textSize="14sp"
+                    android:textColor="@color/mine_info_red"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/default_background"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_alter_password"
+                style="@style/item_rl">
+
+                <TextView
+                    style="@style/item_text"
+                    android:text="@string/mineinfoactivity_alter_password"/>
+
+                <ImageView
+                    style="@style/mine_item_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/default_background"
+                android:minHeight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

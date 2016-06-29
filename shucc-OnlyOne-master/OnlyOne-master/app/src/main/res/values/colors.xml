@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="default_background">#f3f3f3</color>
+
+    <color name="line_grey">#dadce6</color>
+
+    <!--MainActivity-->
+    <color name="tab_normal">#636363</color>
+    <color name="tab_select">#c20d23</color>
+    <!--HomeFragment-->
+    <color name="sort_normal">#636363</color>
+    <color name="sort_select">#c20d23</color>
+    <!--HomeFragment item-->
+    <color name="home_item_grey">#999999</color>
+    <color name="home_item_red">#ff5069</color>
+
+    <!--MineInfoActivity-->
+    <color name="mine_info_red">#c42034</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="新手指南"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

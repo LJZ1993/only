@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_fork"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/actionbar_title"
+            android:text="@string/setlocationactivity_title"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:background="@color/default_background"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height">
+
+            <RelativeLayout
+                android:layout_toLeftOf="@+id/text_search"
+                android:paddingTop="@dimen/padding_size"
+                android:paddingBottom="@dimen/padding_size"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:background="@drawable/bg_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_search"/>
+
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:background="@android:color/transparent"
+                    android:layout_toRightOf="@+id/img_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="4dp"
+                    android:hint="@string/setlocationactivity_search_hint"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/img_clean"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    app:srcCompat="@drawable/ic_edit_clear"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_search"
+                android:layout_alignParentRight="true"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_below="@+id/rl_search"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="16dp"/>
+
+        <ListView
+            android:id="@+id/listview_all_city"
+            android:layout_below="@+id/rl_search"
+            android:layout_toLeftOf="@+id/side_letter_bar"
+            android:layout_marginTop="1px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+
+        <com.xunao.onlyone.ui.widget.SideLetterBar
+            android:id="@+id/side_letter_bar"
+            android:layout_marginTop="104dp"
+            android:layout_marginBottom="@dimen/actionbar_height"
+            android:layout_alignParentRight="true"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/text_letter_overlay"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_overlay"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_search"
+            android:layout_below="@+id/rl_search"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/actionbar_height"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="没有搜索结果"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

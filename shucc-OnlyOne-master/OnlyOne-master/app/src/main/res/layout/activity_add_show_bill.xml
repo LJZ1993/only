@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/default_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/addshowbillactivity_actionbar_title"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rl_actionbar"
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_good"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_avator"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_good"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_good_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比亚迪E6标准版 纯电动车"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                style="@style/addshowbill_text"
+                android:text="期号:3098943785"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                style="@style/addshowbill_text"
+                android:text="我已参与：5人次"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                style="@style/addshowbill_text"
+                android:text="幸运号码：104384738"/>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        style="@style/input_ll">
+        
+        <TextView
+            style="@style/input_text"
+            android:textColor="#9a9a9a"
+            android:text="@string/addshowbillactivity_title_text"/>
+        
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_marginLeft="16dp"
+            style="@style/input_edit"
+            android:hint="@string/addshowbillactivity_title_edit"/>
+        
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/rl_actionbar"
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_height="148dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/input_text"
+            android:textColor="#9a9a9a"
+            android:layout_gravity="start"
+            android:text="@string/addshowbillactivity_dicuss_text"/>
+
+        <EditText
+            android:id="@+id/edit_dicuss"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:hint="@string/feedbackactivity_content_default"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/rl_actionbar"
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+</LinearLayout>

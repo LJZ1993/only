@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/actionbar_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:padding="16dp"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_back"/>
+
+    <TextView
+        android:id="@+id/text_acionbar_title"
+        style="@style/actionbar_title"/>
+
+    <ImageView
+        android:id="@+id/img_share"
+        android:layout_toLeftOf="@+id/img_cart"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="24dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/ic_share"/>
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:padding="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/ic_tab_four_normal"/>
+
+    <TextView
+        android:id="@+id/text_cart_num"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_point_select"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:gravity="center"
+        android:text="99"
+        android:textColor="@android:color/white"
+        android:textSize="5dp"/>
+
+</RelativeLayout>

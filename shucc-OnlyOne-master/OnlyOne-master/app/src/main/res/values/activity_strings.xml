@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MainActivity-->
+    <!--底部tab-->
+    <string name="mainactivity_tab_one">首页</string>
+    <string name="mainactivity_tab_two">分类</string>
+    <string name="mainactivity_tab_three">最终揭晓</string>
+    <string name="mainactivity_tab_four">购物车</string>
+    <string name="mainactivity_tab_five">我的</string>
+    
+    <!--SearchActivity-->
+    <string name="searchactivity_search_hint">请输入您想要的商品</string>
+    <string name="searchactivity_search_history">历史搜索</string>
+    <string name="searchactivity_search_history_null">暂无历史搜索</string>
+    <string name="searchactivity_search_hot">热门搜索</string>
+    <string name="searchactivity_search_hot_null">暂无热门搜索</string>
+    
+    <!--SettingActivity-->
+    <string name="settingactivity_title">设置</string>
+    <string name="settingactivity_notice_setting">通知设置</string>
+    <string name="settingactivity_clean_cache">清除缓存</string>
+    <string name="settingactivity_version">版本号</string>
+    <string name="settingactivity_open_source">开放源代码许可</string>
+    <string name="settingactivity_logout">退出登录</string>
+
+    <!--MineInfoActivity-->
+    <string name="mineinfoactivity_title">我的资料</string>
+    <string name="mineinfoactivity_avator">头像</string>
+    <string name="mineinfoactivity_id">ID</string>
+    <string name="mineinfoactivity_nick">昵称</string>
+    <string name="mineinfoactivity_tel">手机号</string>
+    <string name="mineinfoactivity_gender">性别</string>
+    <string name="mineinfoactivity_birthday">生日</string>
+    <string name="mineinfoactivity_city">所在城市</string>
+    <string name="mineinfoactivity_reward_addr">收货地址</string>
+    <string name="mineinfoactivity_wx">微信</string>
+    <string name="mineinfoactivity_sina">新浪微博</string>
+    <string name="mineinfoactivity_qq">腾讯QQ</string>
+    <string name="mineinfoactivity_bound">已绑定</string>
+    <string name="mineinfoactivity_go_binding">去绑定</string>
+    <string name="mineinfoactivity_alter_password">修改密码</string>
+
+    <!--SetNickNameActivity-->
+    <string name="setnicknameactivity_title">修改昵称</string>
+    <string name="setnicknameactivity_save">保存修改</string>
+    <!--SetGenderActivity-->
+    <string name="setgenderactivity_title">设定性别</string>
+    <string name="setgenderactivity_gender">性别</string>
+    <string name="setgenderactivity_man">男</string>
+    <string name="setgenderactivity_woman">女</string>
+    <!--SetBirthDayActivity-->
+    <string name="setbirthdayactivity_title">设定生日</string>
+
+    <!--LoginActivity-->
+    <string name="loginactivity_user_hint">请输入手机号码</string>
+    <string name="loginactivity_password_hint">请输入密码</string>
+    <string name="loginactivity_iforgot">忘记密码</string>
+    <string name="loginactivity_register">立即注册</string>
+    <!--RegisterActivity-->
+    <string name="registeractivity_tel_text">手机号码\u0020\u0020\u0020\u0020</string>
+    <string name="registeractivity_tel_edit">请输入手机号码</string>
+    <string name="registeractivity_sms_text">短信验证码</string>
+    <string name="registeractivity_sms_edit">请输入短信验证码</string>
+    <string name="registeractivity_sms_send">发送短信验证码</string>
+    <string name="registeractivity_code_text">验证码\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="registeractivity_code_edit">请输入验证码</string>
+    <string name="registeractivity_user_agreement_confirm">轻触上面的“注册”按钮，即表示你同意</string>
+    <string name="registeractivity_user_agreement">《壹圆满用户协议》</string>
+    <!--ResetPasswordActivity-->
+    <string name="resetactivity_title">重置密码</string>
+    <string name="resetactivity_input_text">新密码\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="resetactivity_input_edit">请输入新密码</string>
+    <string name="resetactivity_input_again_text">确定新密码</string>
+    <string name="resetactivity_input_again_edit">请再输入密码</string>
+    <!--SetPasswordActivity-->
+    <string name="setpassactivity_title">设置密码</string>
+    <string name="setpassactivity_input_text">密码\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="setpassactivity_input_edit">请输入密码</string>
+    <string name="setpassactivity_input_again_text">确认密码</string>
+    <string name="setpassactivity_input_again_edit">请再输入密码</string>
+    <string name="setpassactivity_code_text">验证码\u0020\u0020\u0020\u0020</string>
+    <string name="setpassactivity_code_eidt">请输入验证码</string>
+    <!--SetTelActivity-->
+    <string name="settelactivity_title">修改绑定手机</string>
+    <string name="settelactivity_tel_text">新手机号码</string>\
+    <string name="settelactivity_tel_edit">请输入新的手机号码</string>
+    <string name="settelactivity_sms_text">短信验证码</string>
+    <string name="settelactivity_sms_edit">请输入短信验证码</string>
+    <string name="settelactivity_sms_send">发送短信验证码</string>
+    <string name="settelactivity_code_text">验证码\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="settelactivity_code_edit">请输入验证码</string>
+
+    <!--CustomServiceActivity-->
+    <string name="customactivity_title">壹圆满客服</string>
+    <string name="customactivity_on_line_custom">在线客服</string>
+    <string name="customactivity_hot_wire_tel_text">热线电话</string>
+    <string name="customactivity_hot_wire_tel_num">400-4008-0012</string>
+    <string name="customactivity_hot_question">热点问题</string>
+    <string name="customactivity_feedback">意见反馈</string>
+    <!--FeedbackActivity-->
+    <string name="feedbackactivity_actionbar_title">意见反馈</string>
+    <string name="feedbackactivity_title">标题</string>
+    <string name="feedbackactivity_title_default">我的对你们产品的一些看法</string>
+    <string name="feedbackactivity_tel">手机</string>
+    <string name="feedbackactivity_tel_default">您的手机号</string>
+    <string name="feedbackactivity_email">邮箱</string>
+    <string name="feedbackactivity_email_default">您的常用邮箱</string>
+    <string name="feedbackactivity_content">意见</string>
+    <string name="feedbackactivity_content_default">请写下您对我们的意见</string>
+
+    <!--OpenSourceActivity-->
+    <string name="opensourceactivity_title">开放源代码许可</string>
+
+    <!--AddShowBillActivity-->
+    <string name="addshowbillactivity_actionbar_title">添加晒单</string>
+    <string name="addshowbillactivity_title_text">标题</string>
+    <string name="addshowbillactivity_title_edit">请输入您的晒单标题</string>
+    <string name="addshowbillactivity_dicuss_text">评论</string>
+    <string name="addshowbillactivity_dicuss_edit">请写下您对商品的评论</string>
+    <string name="addshowbillactivity_add_photo">添加照片</string>
+    <string name="addshowbillactivity_publist_show">发表晒单</string>
+
+    <!--GoodAreaActivity-->
+    <string name="goodareaactivity_acionbar_title">专区</string>
+
+    <!--SetLocationActivity-->
+    <string name="setlocationactivity_title">当前城市：</string>
+    <string name="setlocationactivity_search_hint">请输入城市中文名称或拼音</string>
+    <string name="setlocationactivity_now_location">已定位城市：</string>
+    <string name="setlocationactivity_history_location">最近访问城市</string>
+    <string name="setlocationactivity_hot_location">热门城市</string>
+</resources>

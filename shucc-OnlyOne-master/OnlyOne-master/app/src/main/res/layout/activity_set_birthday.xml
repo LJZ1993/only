@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/default_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/setbirthdayactivity_title"/>
+
+        <TextView
+            android:id="@+id/text_ok"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:text="@string/ok"
+            android:textColor="#c83144"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rl_actionbar"
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <TextView
+        android:id="@+id/text_birthday_now"
+        android:layout_below="@+id/rl_actionbar"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center"
+        android:text="1990年3月31号"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

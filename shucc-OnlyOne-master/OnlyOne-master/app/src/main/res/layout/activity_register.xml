@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/register"/>
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:text="@string/login"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <LinearLayout
+        style="@style/input_ll">
+
+        <TextView
+            style="@style/input_text"
+            android:text="@string/registeractivity_tel_text"/>
+
+        <EditText
+            android:id="@+id/edit_tel"
+            style="@style/input_edit"
+            android:inputType="phone"
+            android:hint="@string/registeractivity_tel_edit"/>
+
+    </LinearLayout>
+
+    <View style="@style/line"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <TextView
+            android:id="@+id/text_sms"
+            style="@style/input_text"
+            android:layout_centerVertical="true"
+            android:text="@string/registeractivity_sms_text"/>
+
+        <EditText
+            android:id="@+id/edit_sms"
+            style="@style/input_edit"
+            android:layout_toRightOf="@+id/text_sms"
+            android:layout_toLeftOf="@+id/text_send"
+            android:hint="@string/registeractivity_sms_edit"/>
+
+        <TextView
+            android:id="@+id/text_send"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/registeractivity_sms_send"
+            android:textSize="14sp"
+            android:textColor="#cc0033"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <TextView
+            android:id="@+id/text_code"
+            style="@style/input_text"
+            android:layout_centerVertical="true"
+            android:text="@string/registeractivity_code_text"/>
+
+        <EditText
+            android:id="@+id/edit_code"
+            style="@style/input_edit"
+            android:layout_toRightOf="@+id/text_code"
+            android:layout_toLeftOf="@+id/img_code"
+            android:hint="@string/registeractivity_code_edit"/>
+
+        <ImageView
+            android:id="@+id/img_code"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/default_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/red_button"
+            android:text="@string/commit"/>
+
+        <TextView
+            android:id="@+id/text_user_agreement"
+            android:layout_marginBottom="24dp"
+            android:padding="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registeractivity_user_agreement"
+            android:textSize="14sp"
+            android:textColor="#cc0033"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/text_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registeractivity_user_agreement_confirm"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

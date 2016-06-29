@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--HomeFragment-->
+    <string name="homefragment_search_hint">请输入您想要的商品</string>
+    <!--中间的新手指南等-->
+    <string name="homefragment_guide_xszn">新手指南</string>
+    <string name="homefragment_guide_syzq">十元专区</string>
+    <string name="homefragment_guide_sd">晒单</string>
+    <string name="homefragment_guide_jrqd">今日签到</string>
+    <!--人气、进度等-->
+    <string name="homefragment_sort_hot">人气</string>
+    <string name="homefragment_sort_progress">进度</string>
+    <string name="homefragment_sort_latest">最新</string>
+    <string name="homefragment_sort_need">总需</string>
+
+    <!--SortFragment-->
+    <string name="sortfragment_search_title">分类</string>
+    <string name="sortfragment_search_hint">请输入您想要的商品</string>
+
+    <!--MineFragment-->
+    <string name="minefragment_title">我的</string>
+    <string name="minefragment_gold">我的金币</string>
+    <string name="minefragment_indiana">夺宝纪录</string>
+    <string name="minefragment_winning">中奖纪录</string>
+    <string name="minefragment_bill">账单纪录</string>
+    <string name="minefragment_show">我的晒单</string>
+    <string name="minefragment_customer">客服</string>
+    <string name="minefragment_setting">设置</string>
+
+    <!--ShoppingCartFragment-->
+    <string name="shopcartfragment_title">购物车</string>
+    <string name="shopcartfragment_null_text">您的购物车空空如也</string>
+    <string name="shopcartfragment_immediately_indiana">立即夺宝</string>
+    <string name="shopcartfragment_recommend_good">推荐商品</string>
+
+    <!--AnnouncedFragment-->
+    <string name="announcedfragment_title">最新揭晓</string>
+</resources>

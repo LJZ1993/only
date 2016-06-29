@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MainActivity-->
+    <!--底部tab-->
+    <style name="mainactivity_tab_ll">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="mainactivity_tab_img">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+    <style name="mainactivity_tab_text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/tab_normal</item>
+    </style>
+
+    <!--意见反馈界面-->
+    <style name="feedbackactivity_ll">
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="feedbackactivity_text">
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="feedbackactivity_edit">
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!--重置密码，设置密码界面-->
+    <style name="input_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="input_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="input_edit">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!--添加晒单界面-->
+    <style name="addshowbill_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#9a9a9a</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

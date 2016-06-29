@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/default_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/feedbackactivity_actionbar_title"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/feedbackactivity_ll">
+
+            <TextView
+                style="@style/feedbackactivity_text"
+                android:text="@string/feedbackactivity_title"/>
+
+            <EditText
+                android:id="@+id/edit_title"
+                style="@style/feedbackactivity_edit"
+                android:text="@string/feedbackactivity_title_default"/>
+
+        </LinearLayout>
+
+        <View style="@style/line"/>
+
+        <LinearLayout
+            style="@style/feedbackactivity_ll">
+
+            <TextView
+                style="@style/feedbackactivity_text"
+                android:text="@string/feedbackactivity_tel"/>
+
+            <EditText
+                android:id="@+id/edit_tel"
+                style="@style/feedbackactivity_edit"
+                android:hint="@string/feedbackactivity_tel_default"/>
+
+        </LinearLayout>
+
+        <View style="@style/line"/>
+
+        <LinearLayout
+            style="@style/feedbackactivity_ll">
+
+            <TextView
+                style="@style/feedbackactivity_text"
+                android:text="@string/feedbackactivity_email"/>
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/feedbackactivity_edit"
+                android:hint="@string/feedbackactivity_email_default"/>
+
+        </LinearLayout>
+
+        <View style="@style/line"/>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_height="148dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/feedbackactivity_text"
+                android:layout_gravity="start"
+                android:text="@string/feedbackactivity_content"/>
+
+            <EditText
+                android:id="@+id/edit_content"
+                android:background="@null"
+                android:layout_marginLeft="32dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:hint="@string/feedbackactivity_content_default"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_below="@+id/activity_login_password_rl"
+        style="@style/red_button"
+        android:text="@string/commit"/>
+
+</LinearLayout>

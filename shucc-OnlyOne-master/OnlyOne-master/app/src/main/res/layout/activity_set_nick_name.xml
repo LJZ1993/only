@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/default_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/setnicknameactivity_title"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="0dp"/>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_toLeftOf="@+id/img_clean"
+            android:background="@null"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/img_clean"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_edit_clear"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/red_button"
+        android:text="@string/setnicknameactivity_save"/>
+
+</LinearLayout>

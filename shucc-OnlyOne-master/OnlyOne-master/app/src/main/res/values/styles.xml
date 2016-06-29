@@ -1,0 +1,92 @@
+<resources>
+    <!--<style name="AppTheme.Launcher" >-->
+        <!--启动画面-->
+        <!--<item name="android:windowBackground">@android:color/holo_red_dark</item>-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:listDivider">@drawable/bg_divider</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:windowAnimationStyle">@null</item>-->
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <!--<item name="android:windowNoDisplay">false</item>-->
+    </style>
+
+    <!-- 自定义dialog样式 -->
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="FadeInPopWin">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="@android:windowEnterAnimation">@anim/pop_win_content_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/pop_win_content_fade_out</item>
+    </style>
+
+    <!--顶部title-->
+    <style name="actionbar_rl">
+        <item name="android:background">#f7f7f7</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="actionbar_title">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--提交保存按钮-->
+    <style name="red_button">
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_btn_red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">32dp</item>
+    </style>
+
+    <!--横线-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:background">@color/line_grey</item>
+    </style>
+
+    <!--我的界面，设置界面的条目-->
+    <style name="item_rl">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="item_text">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--我的界面的右指向图标-->
+    <style name="mine_item_arrow_right">
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+</resources>

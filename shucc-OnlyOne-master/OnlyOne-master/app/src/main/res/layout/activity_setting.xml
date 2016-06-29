@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/actionbar_rl">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="16dp"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/actionbar_title"
+            android:text="@string/settingactivity_title"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        style="@style/item_rl">
+
+        <TextView
+            style="@style/item_text"
+            android:text="@string/settingactivity_notice_setting"/>
+
+        <com.xunao.onlyone.ui.widget.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+
+            app:normalColor="#c5c5c5"
+            app:selectColor="#c61c2f"
+            app:buttonPadding="2dp"
+            app:switchRate="10"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_clean_cache"
+        style="@style/item_rl">
+
+        <TextView
+            style="@style/item_text"
+            android:text="@string/settingactivity_clean_cache"/>
+
+        <TextView
+            android:id="@+id/text_cache"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23.43M"
+            android:textSize="14sp"
+            android:textColor="#999999"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        style="@style/item_rl">
+
+        <TextView
+            style="@style/item_text"
+            android:text="@string/settingactivity_version"/>
+
+        <TextView
+            android:id="@+id/text_version"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.1"
+            android:textSize="14sp"
+            android:textColor="#999999"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_open_source"
+        style="@style/item_rl">
+
+        <TextView
+            style="@style/item_text"
+            android:text="@string/settingactivity_open_source"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/default_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/red_button"
+            android:text="@string/settingactivity_logout"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

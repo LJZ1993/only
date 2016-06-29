@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="8dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:orientation="vertical"
+    android:layout_width="112dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_good"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_avator"/>
+
+    <TextView
+        android:id="@+id/text_good_name"
+        android:layout_marginTop="8dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="iPhone 5S 16GB金色4G手机"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+    <com.xunao.onlyone.ui.widget.HorizontalProgressView
+        android:id="@+id/progress_view"
+        android:layout_marginTop="4dp"
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+
+        app:horizontalColor="#efeeee"
+        app:horizontalProgressColor="#ffc23c"/>
+
+</LinearLayout>

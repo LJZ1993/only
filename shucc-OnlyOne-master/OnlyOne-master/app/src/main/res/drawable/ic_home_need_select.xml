@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="26dp"
+    android:height="26dp"
+    android:viewportWidth="26"
+    android:viewportHeight="26">
+
+    <group>
+        <path
+            android:fillColor="#c11329"
+            android:fillAlpha="0.79"
+            android:strokeAlpha="0.79"
+            android:pathData="M12.14,0 L14.05,0 C19.86,0.31,24.51,4.74,26,10.21 L26,15.54
+C24.53,20.2,20.98,24.63,15.91,25.43 C9.58,27.02,2.72,22.99,0.8,16.8
+C-2.08,9.24,4.17,0.39,12.14,0 M14.68,2.1 C14.33,3.22,14.04,4.36,13.81,5.52
+C13.31,5.43,12.3,5.27,11.8,5.19 C12.03,4.37,12.5,2.73,12.73,1.91
+C8.65,2.56,4.65,4.86,3.18,8.9 C0.14,15.42,5.76,23.78,12.95,23.5
+C20.03,24.04,26,16.02,23.32,9.43 C22.08,5.54,18.53,3.02,14.68,2.1 Z" />
+        <path
+            android:fillColor="#c11329"
+            android:fillAlpha="0.79"
+            android:strokeAlpha="0.79"
+            android:pathData="M6.43,6.14 C8.05,5.65,8.58,6.22,8.02,7.87 C6.41,8.34,5.88,7.77,6.43,6.14 Z" />
+        <path
+            android:fillColor="#c11329"
+            android:fillAlpha="0.79"
+            android:strokeAlpha="0.79"
+            android:pathData="M18.18,6.16 C19.81,5.69,20.36,6.26,19.81,7.88 C18.18,8.34,17.63,7.76,18.18,6.16
+Z" />
+        <path
+            android:fillColor="#c11329"
+            android:fillAlpha="0.79"
+            android:strokeAlpha="0.79"
+            android:pathData="M12.69,8.75 C15.08,12.04,13.29,16.64,15.16,20.22
+C14.58,20.67,13.41,21.55,12.83,21.99 C12.49,21.53,11.81,20.6,11.47,20.14
+C12.17,16.38,12.38,12.56,12.69,8.75 Z" />
+        <path
+            android:fillColor="#c11329"
+            android:fillAlpha="0.79"
+            android:strokeAlpha="0.79"
+            android:pathData="M3.98,12.02 C5.6,11.47,6.15,12.02,5.64,13.66 C4.01,14.2,3.45,13.65,3.98,12.02 Z" />
+        <path
+            android:fillColor="#c11329"
+            android:fillAlpha="0.79"
+            android:strokeAlpha="0.79"
+            android:pathData="M20.46,11.91 C21.63,10.38,23.71,12.5,22.51,13.81
+C21.36,15.41,19.24,13.21,20.46,11.91 Z" />
+    </group>
+</vector>
